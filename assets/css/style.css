@@ -1,34 +1,49 @@
+:root {
+    --amarillo: #f8e12e;
+    --naranja: #F48B48;
+    --marron: #664731;
+    --rojo: #b90000;
+    --negro: #000000;
+    --rosa: #aaa;
+    --azul: #293f7b;
+    --verde: #7ed957;
+    --blanco: #ffffff;
+    --gris: #333;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--rosa);
+    color: var(--gris);
 }
 
 header {
-    background: #333;
-    color: #fff;
+    /*violeta */
+    display: flex;
+    background: var(--gris);
+    color: var(--blanco);
     padding: 1rem 0;
-    text-align: left;
-    /* position: relative; */
     width: 80%;
-    margin: 0 auto;
-    margin-top: 20px;
-    overflow: hidden;
+    margin: 20px auto 0;
+    flex-direction: column;
 }
 
 header h1 {
     margin: 0;
+    margin-left: 54px;
+    font-size: 3vi;
 }
 
 header img {
     display: block;
-    margin: 0px auto;
-    width: 100%;
+    width: 90%;
     height: 190px;
     object-fit: cover;
+    margin: 22px auto;
+    border-radius: 20px;
 }
 
 nav {
@@ -39,33 +54,61 @@ nav {
 }
 
 nav a {
-    color: #b90000;
-    text-decoration: none;
+    color: var(--rojo) text-decoration: none;
     font-weight: bold;
-    padding: 17px;
+    padding: 8px;
 }
 
 nav a:target {
     text-decoration: underline;
     color: #f4f4f4;
-    background-color: aqua;
+    background-color: var(--rojo);
 }
 
 nav img {
     height: 50px;
-    /* Ajusta la altura de la imagen */
     width: auto;
-    /* Mantén la proporción de la imagen */
 }
 
+.btn button {
+    font-weight: 700;
+    color: var(--marron);
+    padding: 5px 25px;
+    background: var(--amarillo);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn button:hover {
+    color: var(--blanco);
+    background-color: #b41d24;
+}
+
+.btn.current button {
+    background-color: var(--rojo)
+}
+
+nav a[href="#"] {
+    color: var(--blanco);
+}
+
+nav a[href="#"].current button {
+    color: var(--blanco);
+    background-color: #b41d24;
+}
+
+/*   para poner del color de la pagina que estas */
+
 main {
-    max-width: 1200px;
+    display: flex;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
 .events {
-    background: #fff;
+    background: var(--blanco);
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
@@ -84,13 +127,9 @@ main {
 
 .events h2 {
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: var(--blanco);
     text-align: center;
-    background-color: #333;
-}
-
-.events div {
-    width: 100%;
+    background-color: var(--gris);
 }
 
 .events article {
@@ -98,17 +137,37 @@ main {
 }
 
 .events h3 {
-    margin-bottom: 0.5rem;
-    color: #666;
+    margin-bottom: 5px;
+    color: var(--gris);
 }
 
 .events p {
-    padding-left: 390px;
+    color: var(--rojo);
+}
+
+.newEvent {
+    width: 770px;
+    height: 100px;
+    background-color: var(--amarillo);
+    border-radius: 16px;
+    border-style: groove;
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+    align-items: center;
+}
+
+#dates {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background: var(--gris);
+    color: var(--blanco);
     text-align: center;
     padding: 1rem 0;
     position: relative;
