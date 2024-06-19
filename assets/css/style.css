@@ -54,7 +54,8 @@ nav {
 }
 
 nav a {
-    color: var(--rojo) text-decoration: none;
+    color: var(--rojo); 
+    text-decoration: none;
     font-weight: bold;
     padding: 8px;
 }
@@ -176,7 +177,6 @@ main {
 }
 
 .eventGame .pGame {
-    margin-top: ;
     color: var(--gris);
     text-align: center
 }
