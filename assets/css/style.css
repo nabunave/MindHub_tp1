@@ -60,7 +60,7 @@ nav a {
 }
 
 nav a:target {
-    text-decoration: underline;
+    text-decoration: none;
     color: #f4f4f4;
     background-color: var(--rojo);
 }
@@ -70,7 +70,7 @@ nav img {
     width: auto;
 }
 
-.btn button {
+.btn {
     font-weight: 700;
     color: var(--marron);
     padding: 5px 25px;
@@ -79,14 +79,15 @@ nav img {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    text-decoration: none;
 }
 
-.btn button:hover {
+.btn:hover {
     color: var(--blanco);
     background-color: #b41d24;
 }
 
-.btn.current button {
+.btn.current {
     background-color: var(--rojo)
 }
 
@@ -130,6 +131,7 @@ main {
     color: var(--blanco);
     text-align: center;
     background-color: var(--gris);
+    padding: 10px;
 }
 
 .events article {
@@ -147,7 +149,7 @@ main {
 
 .newEvent {
     width: 770px;
-    height: 100px;
+    height: auto;
     background-color: var(--amarillo);
     border-radius: 16px;
     border-style: groove;
@@ -155,14 +157,77 @@ main {
     flex-direction: column;
     margin: 1px;
     align-items: center;
+    font-size: 3vh;
+    padding: 20px;
 }
 
+.eventGame {
+    width: 100%;
+    height: 250px;
+    background-color: var(--amarillo);
+    margin: 1px;
+    margin-top: 100px;
+    color: var(--marron);
+}
+
+.eventGame .imgGame {
+    width: auto;
+    height: 100%;
+}
+
+.eventGame .pGame {
+    margin-top: ;
+    color: var(--gris);
+    text-align: center
+}
+
+.ol-abcd {
+    list-style: lower-alpha;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+	border: 2px solid transparent;
+}
+
+ td, th {
+    font-family: fantasy;
+    font-weight: bold;
+    width: 200px;
+    height: 30px; 
+	border: 2px solid transparent;
+    text-align: center;
+	padding: 5px;
+    background-color: var(--amarillo);
+	border-collapse: collapse;
+
+}
+th {
+	background: var(--gris);
+    color: var(--blanco);
+}
+
+#important {
+    color: var(--marron);
+    text-align: end;
+}
 #dates {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 40px;
+}
+
+#pRules {
+    color: #000;
+    text-align: justify;
+    font-size: 1.5rem;
 }
 
 footer {
