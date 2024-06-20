@@ -7,7 +7,7 @@
     --rosa: #aaa;
     --azul: #293f7b;
     --verde: #7ed957;
-    --blanco: #ffffff;
+    --blanco: #e5e6f9;
     --gris: #333;
 }
 
@@ -92,16 +92,10 @@ nav img {
     background-color: var(--rojo)
 }
 
-nav a[href="#"] {
-    color: var(--blanco);
-}
-
-nav a[href="#"].current button {
+nav a.current {
     color: var(--blanco);
     background-color: #b41d24;
 }
-
-/*   para poner del color de la pagina que estas */
 
 main {
     display: flex;
