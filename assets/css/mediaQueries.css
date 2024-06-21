@@ -1,15 +1,118 @@
-@media (max-width: 800px) {
-    :root {
-        --amarillo: #f8e12e;
-        --naranja: #F48B48;
-        --marron: #664731;
-        --rojo: #b90000;
-        --negro: #000000;
-        --rosa: #aaa;
-        --azul: #293f7b;
-        --verde: #7ed957;
-        --blanco: #e5e6f9;
-        --gris: #333;
+:root {
+    --amarillo: #f8e12e;
+    --naranja: #F48B48;
+    --marron: #664731;
+    --rojo: #b90000;
+    --negro: #000000;
+    --rosa: #aaa;
+    --azul: #293f7b;
+    --verde: #7ed957;
+    --blanco: #e5e6f9;
+    --gris: #333;
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+    header {
+        width: 80%;
+    }
+
+    h1 {
+        background-color: var(--amarillo);
+        color: var(--gris);
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: block;
+        padding: 8px 0;
+        justify-content: space-around;
+    }
+
+    .btn {
+        margin: 10px;
+        width: 100%;
+        font-size: 100%;
+        text-align: center;
+        background-color: var(--amarillo);
+    }
+
+    .events,
+    .sections {
+        padding: 1rem;
+    }
+
+    .article img {
+        max-width: 10%;
+    }
+
+    .newEvent {
+        font-size: 100%;
+    }
+
+    .sectionMaps {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: transparent;
+        padding: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .eventGame .imgGame {
+        /* width: 5000px; */
+        /* height: 500px; */
+        background-color: transparent;
+        object-fit: contain;
+    }
+
+    #pRules {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .fPersonal {
+        width: auto;
+        height: auto;
+        display: grid;
+        /* grid-template-columns: repeat(4, 2fr); */
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 1px;
+        align-items: center;
+        font-size: 1vh;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
     }
 
     header {
@@ -39,10 +142,10 @@
 
     .btn {
         margin: 10px;
-        width: 40%;
+        width: 100%;
         font-size: 100%;
         text-align: center;
-        background-color: aqua;
+        background-color: var(--amarillo);
     }
 
     .events,
@@ -55,14 +158,15 @@
     }
 
     .newEvent {
-        font-size: 100%;
+        font-size: 80%;
+        width: 100%;
     }
 
     .sectionMaps {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        background: var(--blanco);
+        background: transparent;
         padding: 1rem;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         margin-bottom: 2rem;
@@ -84,9 +188,9 @@
     .fPersonal {
         width: auto;
         height: auto;
-        display: grid;
-        grid-template-columns: repeat(4, 2fr);
-        flex-direction: row;
+        display: flex;
+        /* grid-template-columns: repeat(4, 2fr); */
+        flex-direction: column;
         flex-wrap: wrap;
         margin: 1px;
         align-items: center;
@@ -94,47 +198,3 @@
         padding: 20px;
     }
 }
-
-/* @media (max-width: 600px) {
-    header {
-        width: 100%;
-        text-align: center;
-    }
-    header h1 {
-        margin-left: 0;
-    }
-    nav {
-        position: static;
-        text-align: center;
-        margin-top: 10px;
-    }
-    nav a {
-        display: block;
-        padding: 8px 0;
-    }
-    .events,
-    .sections,
-    .newEvent,
-    .eventGame {
-        flex-direction: column;
-        align-items: center;
-    }
-    .events img,
-    .sections img,
-    .newEvent img,
-    .eventGame .imgGame {
-        max-width: 100%;
-    }
-    .fPersonal {
-        grid-template-columns: 1fr;
-    }
-    .fSchool div {
-        width: 100%;
-    }
-}
-
-@media (max-width: 1200px) {
-    main {
-        padding: 0 2rem;
-    }
-} */

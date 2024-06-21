@@ -20,10 +20,15 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 2.6;
     margin: 0;
     padding: 0;
-    background-color: var(--rosa);
+    background-image: url(../images/design1_image2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--amarillo);
     color: var(--gris);
 }
 
@@ -41,12 +46,43 @@ header {
     width: 80%;
     margin: 20px auto 0;
     flex-direction: column;
+    border-radius: 10px;
+}
+
+/*  */
+.imglogo {
+    position: relative;
+    display: inline-block;
+}
+
+.imglogo img {
+    display: block;
+}
+
+.imglogo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/Logo_Mighty_ducks-01.png') no-repeat;
+    background-size: cover;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 1.5));
+    pointer-events: none;
 }
 
 header h1 {
     margin: 0;
     margin-left: 54px;
     font-size: 3vi;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: url('../images/weathered-grey-concrete-texture-background-photo.jpg') no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 header img {
@@ -63,6 +99,7 @@ nav {
     right: 131px;
     top: 7px;
     margin-right: 15px;
+
 }
 
 nav a {
@@ -88,7 +125,7 @@ nav img {
     color: var(--marron);
     padding: 5px 25px;
     background: var(--amarillo);
-    border: none;
+    border: var(--gris) solid 2px;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
@@ -97,11 +134,11 @@ nav img {
 
 .btn:hover {
     color: var(--blanco);
-    background-color: #b41d24;
+    background-color: var(--azul);
 }
 
 .btn.current {
-    background-color: var(--rojo)
+    background-color: var(--azul)
 }
 
 nav a.current {
@@ -113,7 +150,7 @@ nav a.current {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: var(--blanco);
+    background: url(../images/weathered-grey-concrete-texture-background-photo.jpg);
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
@@ -164,19 +201,61 @@ nav a.current {
     flex-direction: column;
     margin: 1px;
     align-items: center;
-    font-size: 3vh;
-    padding: 20px;
+    font-size: 1.5vh;
+    padding: 50px;
+    text-align: justify;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.newEvent fieldset {
+    width: 100%;
+    text-align: center;
+}
+
+.newEvent fieldset p {
+    width: 100%;
+    text-align: justify;
 }
 
 .sections {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: var(--blanco);
+    background: url(../images/weathered-grey-concrete-texture-background-photo.jpg);
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
     justify-content: center;
+    border-radius: 10px;
+}
+
+#sectionsAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../images/weathered-grey-concrete-texture-background-photo.jpg);
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+#sectionsAbout img {
+    display: flex;
+    max-width: 50%;
+    height: auto;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#sectionsAbout h2 {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: var(--blanco);
+    text-align: center;
+    background-color: var(--gris);
+    padding: 10px;
 }
 
 .sections h2 {
@@ -217,29 +296,32 @@ nav a.current {
     flex-direction: row;
     width: 100%;
     height: 250px;
-    background-color: white;
+    background-color: var(--gris);
+    border-radius: 16px;
+    border-style: groove;
     margin: 1px;
     margin-top: 100px;
-    color: var(--marron);
+    color: var(--blanco);
 }
 
 .eventGame .imgGame {
     width: auto;
     height: 100%;
-    background-color: var(--amarillo);
+    /* background-color: var(--amarillo); */
 }
 
 .eventGame .pGame {
-    color: var(--gris);
+    color: var(--blanco);
     text-align: center;
-    margin-top: 2%;
+    /* margin-top: 2%; */
+    font-variant: small-caps;
 }
 
 .sectionMaps {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: var(--blanco);
+    background: transparent;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
@@ -264,7 +346,7 @@ nav a.current {
     color: var(--gris);
     font-size: 1.5rem;
     padding: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     margin-bottom: 2rem;
     justify-content: center;
     border-radius: 15%;
@@ -284,7 +366,7 @@ nav a.current {
     align-items: center;
 }
 
-.article table {
+.article .table {
     width: auto;
     border: 2px solid transparent;
     font-family: fantasy;
@@ -315,7 +397,7 @@ th {
     padding: 5px;
     background-color: var(--amarillo);
     border-collapse: collapse;
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 th {
@@ -324,8 +406,11 @@ th {
 }
 
 #important {
-    color: var(--marron);
+    color: var(--gris);
     text-align: end;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
 }
 
 #dates {
@@ -351,18 +436,31 @@ th {
     flex-wrap: wrap;
     margin: 1px;
     align-items: center;
-    font-size: 3vh;
+    font-size: 1.5vh;
     padding: 20px;
 }
 
+.fPersonal label, input {
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+.fPersonal legend {
+    font-size: 1rem;
+}
+
 .fSchool {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* flex-wrap: wrap; */
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
     /* align-items: center; */
-    /* width: auto;
-    height: auto; 
+    /* justify-content: space-between; */
+    /* gap: 20px; */
+    /* padding: 10px; */
+    /* align-items: center; */
+    /* width: auto; */
+    /* height: auto;  */
     /* margin: 1px; 
     font-size: 3vh;
     padding: 20px;*/
@@ -370,16 +468,21 @@ th {
 
 .fSchool p {
     align-self: flex-start;
+    color: var(--gris);
 }
 
 .fSchool div {
+/* background-color: #b90000; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    background-color: var(--amarillo);
+    /* align-items: center; */
+    /* width: 50%; */
+    /* height: 100%; */
+    /* margin: 1px; */
+}
+
+.fSchool input {
     margin: 1px;
 }
 
@@ -390,7 +493,7 @@ footer {
     padding: 1rem 0;
     position: relative;
     width: 100%;
-    bottom: 0;
+    bottom: -326px;
 }
 
 footer p {
