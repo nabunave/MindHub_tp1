@@ -397,23 +397,35 @@ footer p {
     margin: 0;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 800px) {
     header {
-        width: 90%;
+        width: 100%;
     }
     nav {
-        right: 20px;
+        position: static;
+        text-align: center;
+        margin-top: 10px;
     }
+    nav a {
+        display: block;
+        padding: 8px 0;
+        justify-content: space-between;
+    }
+
     .events,
     .sections {
         padding: 1rem;
     }
     .article img {
-        max-width: 100%;
+        max-width: 10%;
+        background-color: blue;
     }
-}
+    .newEvent{
+        font-size: 100%;
+    }
+} */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) { 
     header {
         width: 100%;
         text-align: center;
@@ -449,10 +461,4 @@ footer p {
     .fSchool div {
         width: 100%;
     }
-}
-
-@media (max-width: 1200px) {
-    main {
-        padding: 0 2rem;
-    }
-}
+} */
