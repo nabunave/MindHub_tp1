@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Mighty Ducks</title>
+    <link rel="icon" type="image/png" href="../assets/images/Logo_Mighty_ducks-01.png">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/nav.js"></script>
+</head>
+
+<header>
+    <div id="nav-placeholder"></div>
+</header>
+
+<body>
+    <main>
+        <section class="events">
+            <h2>Registration Form</h2>
+            <img src="../assets/images/Logo_Mighty_ducks-01.png" alt="Logo Mighty Ducks">
+            <form action="../show_data.html" method="get" class="newEvent">
+                <fieldset class="fPersonal">
+                    <legend>Personal information</legend>
+                    <label for="name">Player's First Name</label>
+                    <input type="text" id="name" name="user_name">
+
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="user_last_name">
+
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="user_address">
+
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user_city">
+
+                    <label for="zip">Zip Code:</label>
+                    <input type="text" id="zip" name="user_zip">
+
+                    <label for="birthdate">Birth Date(mm/dd/yyyy)</label>
+                    <input type="date" id="birthdate" name="user_birthdate">
+
+                    <label for="gender">Gender</label>
+                    <select name="user_gender" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+
+                    <label for="grade">Grade</label>
+                    <select name="user_grade" id="grade">
+                        <option value="Pre-School">Pre-School</option>
+                        <option value="1">1st</option>
+                        <option value="2">2nd</option>
+                        <option value="3">3rd</option>
+                        <option value="4">4th</option>
+                        <option value="5">5th</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="fSchool">
+                    <legend>Which elementary school do you live near?</legend>
+                    <p>Closest School:</p>
+                    <div class="fSchool">
+                        <input type="radio" id="Katzenmaier" name="school" value="Katzenmaier">
+                        <label for="Katzenmaier">AJ Katzenmaier</label>
+
+                        <input type="radio" id="Marjorie P Hart" name="school" value="Marjorie P Hart">
+                        <label for="Marjorie P Hart">Marjorie P Hart</label>
+
+                        <input type="radio" id="Greenbay" name="school" value="Greenbay">
+                        <label for="Greenbay">Greenbay</label>
+                    </div>
+                    <div class="fSchool">
+                        <input type="radio" id="North Elementary" name="school" value="North Elementary">
+                        <label for="North Elementary">North Elementary</label>
+
+                        <input type="radio" id="Howard A Yeager" name="school" value="Howard A Yeager">
+                        <label for="Howard A Yeager">Howard A Yeager</label>
+
+                        <input type="radio" id="South Elementary" name="school" value="South Elementary">
+                        <label for="South Elementary">South Elementary</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What position(s) do you normally play? (check all that apply)</legend>
+                    <div>
+                        <input type="checkbox" id="Fordward" name="positionPlay" value="Fordward">
+                        <label for="Fordward">Fordward</label>
+
+                        <input type="checkbox" id="Midfield" name="positionPlay" value="Midfield">
+                        <label for="Midfield">Midfield</label>
+
+                        <input type="checkbox" id="Defense" name="positionPlay" value="Defense">
+                        <label for="Defense">Defense</label>
+
+                        <input type="checkbox" id="Goalkeeper" name="positionPlay" value="Goalkeeper">
+                        <label for="Goalkeeper">Goalkeeper</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Uniform Size:</legend>
+                    <div>
+                        <input type="radio" id="Youth Small" name="Uniform" value="Youth Small">
+                        <label for="Youth Small">Youth Small</label>
+
+                        <input type="radio" id="Youth Medium" name="Uniform" value="Youth Medium">
+                        <label for="Youth Medium">Youth Medium</label>
+
+                        <input type="radio" id="Youth Large" name="Uniform" value="Youth Large">
+                        <label for="Youth Large">Youth Large</label>
+
+                        <input type="radio" id="Small" name="Uniform" value="Small">
+                        <label for="Small">Small</label>
+
+                        <input type="radio" id="Medium" name="Uniform" value="Medium">
+                        <label for="Medium">Medium</label>
+
+                        <input type="radio" id="Large" name="Uniform" value="Large">
+                        <label for="Large">Large</label>
+
+                        <input type="radio" id="Extra-Large" name="Uniform" value="Extra-Large">
+                        <label for="Extra-Large">Extra-Large</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div>
+                        <p>Permission to Play</p>
+                        <p>I, the parent or guardian of the minor registrant, agree that in registering and by abiding
+                            by all the rules of the Mighty Ducks Hockey League (MDHL), I recognize and will abide by all
+                            associated with hockey and in consideration for the “League” accepting the registrant for
+                            its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify
+                            MDHL, their employees, associated personnel, and volunteers, including the facilities used
+                            for practices and games against any claim by or on behalf of the registrant as a result of
+                            the registrant’s participation in the program and/or being transported to or from MDHL
+                            sponsored activities. By signing below, I hereby agree and authorize the above. In addition,
+                            by entering your name below, I also acknowledge that I have read the cancellation policy and agree to
+                            its terms.</p>
+                    </div>
+                    <div>
+                        <label for="signature">Parent/Guardian/Signature:</label>
+                        <input type="text" name="Signature" id="signature">
+                    </div>
+                    <div>
+                        <label for="date">Date:</label>
+                        <input type="text" name="Date" id="date">
+                    </div>
+                    <div class="submit">
+                        <label for="submit">Submit</label>
+                        <input type="submit" name="Enviar" id="submit">
+                    </div>
+                </fieldset>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mighty Ducks Hockey League. All rights reserved.</p>
+    </footer>
+
+    <!-- <script src="../assets/js/registration.js"></script> -->
+</body>
+
+</html>

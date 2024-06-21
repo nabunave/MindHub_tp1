@@ -13,7 +13,7 @@ function highlightCurrentPage() {
 
     navLinks.forEach(link => { //recorremos los enlaces para encontrar el actual y agregar el current
         const linkPath = new URL(link.href).pathname;
-        if (linkPath === currentPath || 
+        if (linkPath === currentPath ||
             (linkPath === '/index.html' && currentPath === '/')) {
             link.classList.add('current');
         }
